@@ -7,7 +7,7 @@ uploaded_file = st.file_uploader("Scegli un file PDF", type="pdf")
 # Se il file è caricato, leggi il contenuto
 if uploaded_file is not None:
     # Crea un oggetto PdfFileReader dal file caricato
-    pdf_reader = PyPDF2.PdfFileReader(uploaded_file)
+    pdf_reader = PyPDF2.PdfReader(uploaded_file)
     # Ottieni il numero di pagine del pdf
     num_pages = pdf_reader.numPages
     # Inizializza una lista vuota per contenere il testo di ogni pagina
