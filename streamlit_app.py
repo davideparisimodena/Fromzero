@@ -9,7 +9,7 @@ if uploaded_file is not None:
     # Crea un oggetto PdfFileReader dal file caricato
     pdf_reader = PyPDF2.PdfReader(uploaded_file)
     # Ottieni il numero di pagine del pdf
-    num_pages = len(reader.pages)
+    num_pages = len(pdf_reader.pages)
     # Inizializza una lista vuota per contenere il testo di ogni pagina
     pages = []
     # Itera su ogni pagina e aggiungi il testo alla lista
