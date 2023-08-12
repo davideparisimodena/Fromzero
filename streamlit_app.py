@@ -14,5 +14,5 @@ if uploaded_file is not None:
         text += page.extract_text()
     #pdf_to_text('uploaded_file.pdf')
     #return text 
-    st.write(text)
+st.write(text)
 
