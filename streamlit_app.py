@@ -14,7 +14,7 @@ if uploaded_file is not None:
     pages = []
     # Itera su ogni pagina e aggiungi il testo alla lista
     for i in range(num_pages):
-        page = pdf_reader.getPage(i)
+        page = pdf_reader.pages(i)
         text = page.extractText()
         pages.append(text)
     # Unisci il testo di tutte le pagine in una stringa
